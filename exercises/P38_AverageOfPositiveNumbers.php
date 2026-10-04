@@ -8,7 +8,7 @@ class P38_AverageOfPositiveNumbers
         $count = 0;
         $sum = 0;
         while (true) {
-            (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+            $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
             if ($input > 0) {
                 $sum += $input;
                 $count++;

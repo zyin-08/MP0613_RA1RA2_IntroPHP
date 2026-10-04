@@ -7,7 +7,7 @@ class P32_OnlyPositives
         // Write your code here
         while (true){
             echo "Give a number:\n";
-            (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+            $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
             if($input < 0){
                 echo "Unsuitable number";
             } else if ($input == 0){

@@ -6,7 +6,7 @@ class P28_LeapYear
     {
         // Write your code here
         echo "Give a year: ";
-        (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
         if ($input % 4 == 0 && ($input % 100 != 0 || $input % 400 == 0)){
             echo "The year is a leap year.";
         } else {

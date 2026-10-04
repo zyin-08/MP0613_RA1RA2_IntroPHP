@@ -6,7 +6,7 @@ class P42_SumOfASequence
     {
         // Write your code here
         echo "Last number? ";
-        (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
         $sum = 0;
         for ($i = 1; $i <= $input; $i++){
             $sum += $i;

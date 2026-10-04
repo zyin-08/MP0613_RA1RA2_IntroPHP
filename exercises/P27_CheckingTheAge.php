@@ -6,7 +6,7 @@ class P27_CheckingTheAge
     {
         // Write your code here
         echo "How old are you? ";
-        (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
         if ($input >= 0 && $input <= 120){
             echo "Ok";
         } else {

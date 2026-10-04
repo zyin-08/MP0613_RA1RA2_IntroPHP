@@ -6,7 +6,7 @@ class P29_GiftTax
     {
         // Write your code here
         echo "Value of the gift?\n";
-        (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
         if ($input >= 5000 && $input < 25000) {
             $result = (100 + ($input - 5000) * 0.08);
             echo "Tax: " . $result;

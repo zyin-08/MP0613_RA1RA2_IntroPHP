@@ -6,7 +6,7 @@ class P22_GradesAndPoints
     {
         // Write your code here
         echo "Give points[0-100]:";
-        (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN)); 
+        $input = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN)); 
         if ($input < 0){
             echo "Grade: impossible!";
         } else if($input >= 0 && $input <= 49){
