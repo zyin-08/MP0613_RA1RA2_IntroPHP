@@ -10,7 +10,11 @@ class P46_SumOfArray
 
     public function sumOfNumbersInArray(array $array): int
     {
-        // Write your code here
-       
+        // Write your code here´
+        $sum = 0;
+        for ($i = 0; $i < count($array); $i++){
+            $sum += $array[$i];
+        }
+        return $sum;
     }
 }

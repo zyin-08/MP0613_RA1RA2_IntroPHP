@@ -5,6 +5,16 @@ class P35_SumOfNumbers
     public function main(): void
     {
         // Write your code here
-       
+        $count = 0;
+        while (true){
+            echo "Give a number:\n";
+            (int) $input = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+            if ($input == 0){
+                break;
+            } else {
+                $count += $input;
+            }
+        }
+        echo "Sum of the numbers: " . $count;
     }
 }
